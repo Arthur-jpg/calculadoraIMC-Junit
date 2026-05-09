@@ -1,3 +1,9 @@
+package imc.classificacao;
+
+import imc.model.ClassificacaoIMC;
+import imc.model.LimitesPercentil;
+import imc.model.Sexo;
+
 import java.util.Map;
 
 public class ClassificadorInfantil implements ClassificadorPorFaixaEtaria {

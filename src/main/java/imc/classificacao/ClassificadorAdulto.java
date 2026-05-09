@@ -1,3 +1,8 @@
+package imc.classificacao;
+
+import imc.model.ClassificacaoIMC;
+import imc.model.Sexo;
+
 public class ClassificadorAdulto implements ClassificadorPorFaixaEtaria {
     @Override
     public ClassificacaoIMC classificar(double imc, int idade, Sexo sexo) {

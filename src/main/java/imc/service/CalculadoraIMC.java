@@ -1,3 +1,9 @@
+package imc.service;
+
+import imc.classificacao.ClassificadorFactory;
+import imc.model.ClassificacaoIMC;
+import imc.model.Sexo;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.Locale;

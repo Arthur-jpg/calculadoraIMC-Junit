@@ -1,3 +1,5 @@
+package imc.model;
+
 import java.util.Locale;
 
 public enum Sexo {

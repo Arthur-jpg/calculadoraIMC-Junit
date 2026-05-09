@@ -1,3 +1,5 @@
+package imc.classificacao;
+
 public class ClassificadorFactory {
     private final ClassificadorPorFaixaEtaria classificadorAdulto = new ClassificadorAdulto();
     private final ClassificadorPorFaixaEtaria classificadorIdoso = new ClassificadorIdoso();

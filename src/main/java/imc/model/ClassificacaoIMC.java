@@ -1,3 +1,5 @@
+package imc.model;
+
 public enum ClassificacaoIMC {
     BAIXO_PESO_MUITO_GRAVE("Baixo peso muito grave"),
     BAIXO_PESO_GRAVE("Baixo peso grave"),
