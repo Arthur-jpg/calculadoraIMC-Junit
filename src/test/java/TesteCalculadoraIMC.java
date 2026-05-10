@@ -1,7 +1,8 @@
+import imc.service.CalculadoraIMC;
 import org.junit.Assert;
 import org.junit.Test;
+
 import java.util.Locale;
-import imc.service.CalculadoraIMC;
 
 public class TesteCalculadoraIMC {
 
@@ -175,6 +176,306 @@ public class TesteCalculadoraIMC {
     @Test
     public void deveClassificarIdosaMulherCaso10_ObesidadeGrauIII() {
         assertClassificacao(42.01, 66, "feminino", "Obesidade grau III");
+    }
+
+    @Test
+    public void deveClassificarMenino2AnosCaso1_BaixoPeso() {
+        assertClassificacao(14.49, 2, "masculino", "Baixo peso");
+    }
+
+    @Test
+    public void deveClassificarMenino2AnosCaso2_PesoNormal() {
+        assertClassificacao(14.50, 2, "masculino", "Peso normal");
+    }
+
+    @Test
+    public void deveClassificarMenino2AnosCaso3_PesoNormal() {
+        assertClassificacao(17.99, 2, "masculino", "Peso normal");
+    }
+
+    @Test
+    public void deveClassificarMenino2AnosCaso4_Sobrepeso() {
+        assertClassificacao(18.00, 2, "masculino", "Sobrepeso");
+    }
+
+    @Test
+    public void deveClassificarMenino2AnosCaso5_Sobrepeso() {
+        assertClassificacao(18.99, 2, "masculino", "Sobrepeso");
+    }
+
+    @Test
+    public void deveClassificarMenino2AnosCaso6_Obesidade() {
+        assertClassificacao(19.00, 2, "masculino", "Obesidade");
+    }
+
+    @Test
+    public void deveClassificarMenino4AnosCaso1_BaixoPeso() {
+        assertClassificacao(13.79, 4, "masculino", "Baixo peso");
+    }
+
+    @Test
+    public void deveClassificarMenino4AnosCaso2_PesoNormal() {
+        assertClassificacao(13.80, 4, "masculino", "Peso normal");
+    }
+
+    @Test
+    public void deveClassificarMenino4AnosCaso3_PesoNormal() {
+        assertClassificacao(17.39, 4, "masculino", "Peso normal");
+    }
+
+    @Test
+    public void deveClassificarMenino4AnosCaso4_Sobrepeso() {
+        assertClassificacao(17.40, 4, "masculino", "Sobrepeso");
+    }
+
+    @Test
+    public void deveClassificarMenino4AnosCaso5_Sobrepeso() {
+        assertClassificacao(18.29, 4, "masculino", "Sobrepeso");
+    }
+
+    @Test
+    public void deveClassificarMenino4AnosCaso6_Obesidade() {
+        assertClassificacao(18.30, 4, "masculino", "Obesidade");
+    }
+
+    @Test
+    public void deveClassificarMenino6AnosCaso1_BaixoPeso() {
+        assertClassificacao(13.69, 6, "masculino", "Baixo peso");
+    }
+
+    @Test
+    public void deveClassificarMenino6AnosCaso2_PesoNormal() {
+        assertClassificacao(13.70, 6, "masculino", "Peso normal");
+    }
+
+    @Test
+    public void deveClassificarMenino6AnosCaso3_PesoNormal() {
+        assertClassificacao(17.69, 6, "masculino", "Peso normal");
+    }
+
+    @Test
+    public void deveClassificarMenino6AnosCaso4_Sobrepeso() {
+        assertClassificacao(17.70, 6, "masculino", "Sobrepeso");
+    }
+
+    @Test
+    public void deveClassificarMenino6AnosCaso5_Sobrepeso() {
+        assertClassificacao(18.79, 6, "masculino", "Sobrepeso");
+    }
+
+    @Test
+    public void deveClassificarMenino6AnosCaso6_Obesidade() {
+        assertClassificacao(18.80, 6, "masculino", "Obesidade");
+    }
+
+    @Test
+    public void deveClassificarMenino8AnosCaso1_BaixoPeso() {
+        assertClassificacao(13.99, 8, "masculino", "Baixo peso");
+    }
+
+    @Test
+    public void deveClassificarMenino8AnosCaso2_PesoNormal() {
+        assertClassificacao(14.00, 8, "masculino", "Peso normal");
+    }
+
+    @Test
+    public void deveClassificarMenino8AnosCaso3_PesoNormal() {
+        assertClassificacao(18.99, 8, "masculino", "Peso normal");
+    }
+
+    @Test
+    public void deveClassificarMenino8AnosCaso4_Sobrepeso() {
+        assertClassificacao(19.00, 8, "masculino", "Sobrepeso");
+    }
+
+    @Test
+    public void deveClassificarMenino8AnosCaso5_Sobrepeso() {
+        assertClassificacao(20.29, 8, "masculino", "Sobrepeso");
+    }
+
+    @Test
+    public void deveClassificarMenino8AnosCaso6_Obesidade() {
+        assertClassificacao(20.30, 8, "masculino", "Obesidade");
+    }
+
+    @Test
+    public void deveClassificarMenino10AnosCaso1_BaixoPeso() {
+        assertClassificacao(14.59, 10, "masculino", "Baixo peso");
+    }
+
+    @Test
+    public void deveClassificarMenino10AnosCaso2_PesoNormal() {
+        assertClassificacao(14.60, 10, "masculino", "Peso normal");
+    }
+
+    @Test
+    public void deveClassificarMenino10AnosCaso3_PesoNormal() {
+        assertClassificacao(20.49, 10, "masculino", "Peso normal");
+    }
+
+    @Test
+    public void deveClassificarMenino10AnosCaso4_Sobrepeso() {
+        assertClassificacao(20.50, 10, "masculino", "Sobrepeso");
+    }
+
+    @Test
+    public void deveClassificarMenino10AnosCaso5_Sobrepeso() {
+        assertClassificacao(22.49, 10, "masculino", "Sobrepeso");
+    }
+
+    @Test
+    public void deveClassificarMenino10AnosCaso6_Obesidade() {
+        assertClassificacao(22.50, 10, "masculino", "Obesidade");
+    }
+
+    @Test
+    public void deveClassificarMenina2AnosCaso1_BaixoPeso() {
+        assertClassificacao(14.29, 2, "feminino", "Baixo peso");
+    }
+
+    @Test
+    public void deveClassificarMenina2AnosCaso2_PesoNormal() {
+        assertClassificacao(14.30, 2, "feminino", "Peso normal");
+    }
+
+    @Test
+    public void deveClassificarMenina2AnosCaso3_PesoNormal() {
+        assertClassificacao(17.99, 2, "feminino", "Peso normal");
+    }
+
+    @Test
+    public void deveClassificarMenina2AnosCaso4_Sobrepeso() {
+        assertClassificacao(18.00, 2, "feminino", "Sobrepeso");
+    }
+
+    @Test
+    public void deveClassificarMenina2AnosCaso5_Sobrepeso() {
+        assertClassificacao(18.99, 2, "feminino", "Sobrepeso");
+    }
+
+    @Test
+    public void deveClassificarMenina2AnosCaso6_Obesidade() {
+        assertClassificacao(19.00, 2, "feminino", "Obesidade");
+    }
+
+    @Test
+    public void deveClassificarMenina4AnosCaso1_BaixoPeso() {
+        assertClassificacao(13.49, 4, "feminino", "Baixo peso");
+    }
+
+    @Test
+    public void deveClassificarMenina4AnosCaso2_PesoNormal() {
+        assertClassificacao(13.50, 4, "feminino", "Peso normal");
+    }
+
+    @Test
+    public void deveClassificarMenina4AnosCaso3_PesoNormal() {
+        assertClassificacao(17.19, 4, "feminino", "Peso normal");
+    }
+
+    @Test
+    public void deveClassificarMenina4AnosCaso4_Sobrepeso() {
+        assertClassificacao(17.20, 4, "feminino", "Sobrepeso");
+    }
+
+    @Test
+    public void deveClassificarMenina4AnosCaso5_Sobrepeso() {
+        assertClassificacao(18.19, 4, "feminino", "Sobrepeso");
+    }
+
+    @Test
+    public void deveClassificarMenina4AnosCaso6_Obesidade() {
+        assertClassificacao(18.20, 4, "feminino", "Obesidade");
+    }
+
+    @Test
+    public void deveClassificarMenina6AnosCaso1_BaixoPeso() {
+        assertClassificacao(13.39, 6, "feminino", "Baixo peso");
+    }
+
+    @Test
+    public void deveClassificarMenina6AnosCaso2_PesoNormal() {
+        assertClassificacao(13.40, 6, "feminino", "Peso normal");
+    }
+
+    @Test
+    public void deveClassificarMenina6AnosCaso3_PesoNormal() {
+        assertClassificacao(17.49, 6, "feminino", "Peso normal");
+    }
+
+    @Test
+    public void deveClassificarMenina6AnosCaso4_Sobrepeso() {
+        assertClassificacao(17.50, 6, "feminino", "Sobrepeso");
+    }
+
+    @Test
+    public void deveClassificarMenina6AnosCaso5_Sobrepeso() {
+        assertClassificacao(18.69, 6, "feminino", "Sobrepeso");
+    }
+
+    @Test
+    public void deveClassificarMenina6AnosCaso6_Obesidade() {
+        assertClassificacao(18.70, 6, "feminino", "Obesidade");
+    }
+
+    @Test
+    public void deveClassificarMenina8AnosCaso1_BaixoPeso() {
+        assertClassificacao(13.79, 8, "feminino", "Baixo peso");
+    }
+
+    @Test
+    public void deveClassificarMenina8AnosCaso2_PesoNormal() {
+        assertClassificacao(13.80, 8, "feminino", "Peso normal");
+    }
+
+    @Test
+    public void deveClassificarMenina8AnosCaso3_PesoNormal() {
+        assertClassificacao(18.79, 8, "feminino", "Peso normal");
+    }
+
+    @Test
+    public void deveClassificarMenina8AnosCaso4_Sobrepeso() {
+        assertClassificacao(18.80, 8, "feminino", "Sobrepeso");
+    }
+
+    @Test
+    public void deveClassificarMenina8AnosCaso5_Sobrepeso() {
+        assertClassificacao(20.49, 8, "feminino", "Sobrepeso");
+    }
+
+    @Test
+    public void deveClassificarMenina8AnosCaso6_Obesidade() {
+        assertClassificacao(20.50, 8, "feminino", "Obesidade");
+    }
+
+    @Test
+    public void deveClassificarMenina10AnosCaso1_BaixoPeso() {
+        assertClassificacao(14.29, 10, "feminino", "Baixo peso");
+    }
+
+    @Test
+    public void deveClassificarMenina10AnosCaso2_PesoNormal() {
+        assertClassificacao(14.30, 10, "feminino", "Peso normal");
+    }
+
+    @Test
+    public void deveClassificarMenina10AnosCaso3_PesoNormal() {
+        assertClassificacao(20.19, 10, "feminino", "Peso normal");
+    }
+
+    @Test
+    public void deveClassificarMenina10AnosCaso4_Sobrepeso() {
+        assertClassificacao(20.20, 10, "feminino", "Sobrepeso");
+    }
+
+    @Test
+    public void deveClassificarMenina10AnosCaso5_Sobrepeso() {
+        assertClassificacao(22.79, 10, "feminino", "Sobrepeso");
+    }
+
+    @Test
+    public void deveClassificarMenina10AnosCaso6_Obesidade() {
+        assertClassificacao(22.80, 10, "feminino", "Obesidade");
     }
 
     private void assertClassificacao(double imcEsperado, int idade, String sexo, String classificacaoEsperada) {

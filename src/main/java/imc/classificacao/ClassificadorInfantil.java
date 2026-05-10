@@ -31,10 +31,10 @@ public class ClassificadorInfantil implements ClassificadorPorFaixaEtaria {
         if (imc < limites.p5()) {
             return ClassificacaoIMC.BAIXO_PESO;
         }
-        if (imc <= limites.p85()) {
+        if (imc < limites.p85()) {
             return ClassificacaoIMC.PESO_NORMAL;
         }
-        if (imc <= limites.p95()) {
+        if (imc < limites.p95()) {
             return ClassificacaoIMC.SOBREPESO;
         }
         return ClassificacaoIMC.OBESIDADE;
