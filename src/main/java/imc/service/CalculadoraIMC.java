@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.Locale;
 
-public class CalculadoraIMC {
+public class CalculadoraIMC implements CalculadoraIMCService {
 
     private final ClassificadorFactory classificadorFactory;
 
@@ -16,6 +16,7 @@ public class CalculadoraIMC {
         this.classificadorFactory = new ClassificadorFactory();
     }
 
+    @Override
     public String calcularIMC(double peso, double altura, int idade, String sexo) {
         validarEntradas(peso, altura, idade, sexo);
 

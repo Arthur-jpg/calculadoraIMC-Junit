@@ -1,4 +1,6 @@
 import imc.service.CalculadoraIMC;
+import imc.service.CalculadoraIMCSimples;
+import imc.service.CalculadoraIMCService;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -6,7 +8,17 @@ import java.util.Locale;
 
 public class TesteCalculadoraIMC {
 
-    private final CalculadoraIMC calculadora = new CalculadoraIMC();
+    // Escolha manual da implementacao para os testes:
+    // private static final String IMPLEMENTACAO = "avancada";
+    private static final String IMPLEMENTACAO = "simples";
+    private final CalculadoraIMCService calculadora = criarCalculadora();
+
+    private CalculadoraIMCService criarCalculadora() {
+        if ("simples".equalsIgnoreCase(IMPLEMENTACAO)) {
+            return new CalculadoraIMCSimples();
+        }
+        return new CalculadoraIMC();
+    }
 
     @Test
     public void deveClassificarAdultoCaso1_BaixoPesoMuitoGrave() {
