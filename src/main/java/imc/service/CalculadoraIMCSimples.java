@@ -75,9 +75,9 @@ public class CalculadoraIMCSimples implements CalculadoraIMCService {
             return "Obesidade grau III";
         }
 
-        if (imc <= 30.00) return "Sobrepeso";
-        if (imc <= 35.00) return "Obesidade grau I";
-        if (imc <= 39.90) return "Obesidade grau II";
+        if (imc <= 32.00) return "Sobrepeso";
+        if (imc <= 37.00) return "Obesidade grau I";
+        if (imc <= 41.90) return "Obesidade grau II";
         return "Obesidade grau III";
     }
 

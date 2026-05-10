@@ -33,13 +33,13 @@ public class ClassificadorIdoso implements ClassificadorPorFaixaEtaria {
     }
 
     private ClassificacaoIMC classificarMasculino(double imc) {
-        if (imc <= 30.00) {
+        if (imc <= 32.00) {
             return ClassificacaoIMC.SOBREPESO;
         }
-        if (imc <= 35.00) {
+        if (imc <= 37.00) {
             return ClassificacaoIMC.OBESIDADE_GRAU_I;
         }
-        if (imc <= 39.90) {
+        if (imc <= 41.90) {
             return ClassificacaoIMC.OBESIDADE_GRAU_II;
         }
         return ClassificacaoIMC.OBESIDADE_GRAU_III;
