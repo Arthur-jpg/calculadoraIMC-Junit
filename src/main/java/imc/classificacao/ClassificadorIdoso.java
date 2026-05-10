@@ -20,13 +20,13 @@ public class ClassificadorIdoso implements ClassificadorPorFaixaEtaria {
     }
 
     private ClassificacaoIMC classificarFeminino(double imc) {
-        if (imc <= 32.00) {
+        if (imc <= 30.00) {
             return ClassificacaoIMC.SOBREPESO;
         }
-        if (imc <= 37.00) {
+        if (imc <= 35.00) {
             return ClassificacaoIMC.OBESIDADE_GRAU_I;
         }
-        if (imc <= 41.90) {
+        if (imc <= 39.99) {
             return ClassificacaoIMC.OBESIDADE_GRAU_II;
         }
         return ClassificacaoIMC.OBESIDADE_GRAU_III;
@@ -39,7 +39,7 @@ public class ClassificadorIdoso implements ClassificadorPorFaixaEtaria {
         if (imc <= 37.00) {
             return ClassificacaoIMC.OBESIDADE_GRAU_I;
         }
-        if (imc <= 41.90) {
+        if (imc <= 41.99) {
             return ClassificacaoIMC.OBESIDADE_GRAU_II;
         }
         return ClassificacaoIMC.OBESIDADE_GRAU_III;
