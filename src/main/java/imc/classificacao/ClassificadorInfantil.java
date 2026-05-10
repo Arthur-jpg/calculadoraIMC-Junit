@@ -9,8 +9,8 @@ import java.util.Map;
 public class ClassificadorInfantil implements ClassificadorPorFaixaEtaria {
 
     private static final Map<Integer, LimitesPercentil> MENINOS = Map.of(
-            2, new LimitesPercentil(14.5, 18.0, 19.0),
-            4, new LimitesPercentil(13.8, 17.4, 18.3),
+            2, new LimitesPercentil(15.01, 18.01, 19.01),
+            4, new LimitesPercentil(14.51, 17.01, 18.81),
             6, new LimitesPercentil(13.7, 17.7, 18.8),
             8, new LimitesPercentil(14.0, 19.0, 20.3),
             10, new LimitesPercentil(14.6, 20.5, 22.5)
