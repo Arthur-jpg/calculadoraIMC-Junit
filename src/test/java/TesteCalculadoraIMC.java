@@ -305,43 +305,43 @@ public class TesteCalculadoraIMC {
 
     @Test
     public void menino4anos_baixo_peso_caso41() {
-        ResultadoIMC resultado = calculadora.calcularIMC(13.79, 1.00, 4, "masculino");
-        Assert.assertEquals(13.79, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(14.50, 1.00, 4, "masculino");
+        Assert.assertEquals(14.50, resultado.imc(), 0.0);
         Assert.assertEquals("Baixo peso", resultado.classificacao());
     }
 
     @Test
     public void menino4anos_peso_normal_caso42() {
-        ResultadoIMC resultado = calculadora.calcularIMC(13.80, 1.00, 4, "masculino");
-        Assert.assertEquals(13.80, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(14.51, 1.00, 4, "masculino");
+        Assert.assertEquals(14.51, resultado.imc(), 0.0);
         Assert.assertEquals("Peso normal", resultado.classificacao());
     }
 
     @Test
     public void menino4anos_peso_normal_caso43() {
-        ResultadoIMC resultado = calculadora.calcularIMC(17.39, 1.00, 4, "masculino");
-        Assert.assertEquals(17.39, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(17.00, 1.00, 4, "masculino");
+        Assert.assertEquals(17.00, resultado.imc(), 0.0);
         Assert.assertEquals("Peso normal", resultado.classificacao());
     }
 
     @Test
     public void menino4anos_sobrepeso_caso44() {
-        ResultadoIMC resultado = calculadora.calcularIMC(17.40, 1.00, 4, "masculino");
-        Assert.assertEquals(17.40, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(17.10, 1.00, 4, "masculino");
+        Assert.assertEquals(17.10, resultado.imc(), 0.0);
         Assert.assertEquals("Sobrepeso", resultado.classificacao());
     }
 
     @Test
     public void menino4anos_sobrepeso_caso45() {
-        ResultadoIMC resultado = calculadora.calcularIMC(18.29, 1.00, 4, "masculino");
-        Assert.assertEquals(18.29, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(18.80, 1.00, 4, "masculino");
+        Assert.assertEquals(18.80, resultado.imc(), 0.0);
         Assert.assertEquals("Sobrepeso", resultado.classificacao());
     }
 
     @Test
     public void menino4anos_obesidade_caso46() {
-        ResultadoIMC resultado = calculadora.calcularIMC(18.30, 1.00, 4, "masculino");
-        Assert.assertEquals(18.30, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(18.81, 1.00, 4, "masculino");
+        Assert.assertEquals(18.81, resultado.imc(), 0.0);
         Assert.assertEquals("Obesidade", resultado.classificacao());
     }
 
