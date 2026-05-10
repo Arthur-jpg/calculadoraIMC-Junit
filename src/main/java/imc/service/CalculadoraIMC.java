@@ -2,11 +2,11 @@ package imc.service;
 
 import imc.classificacao.ClassificadorFactory;
 import imc.model.ClassificacaoIMC;
+import imc.model.ResultadoIMC;
 import imc.model.Sexo;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.util.Locale;
 
 public class CalculadoraIMC implements CalculadoraIMCService {
 
@@ -17,7 +17,7 @@ public class CalculadoraIMC implements CalculadoraIMCService {
     }
 
     @Override
-    public String calcularIMC(double peso, double altura, int idade, String sexo) {
+    public ResultadoIMC calcularIMC(double peso, double altura, int idade, String sexo) {
         validarEntradas(peso, altura, idade, sexo);
 
         Sexo sexoNormalizado = Sexo.from(sexo);
@@ -27,7 +27,7 @@ public class CalculadoraIMC implements CalculadoraIMCService {
                 .obterClassificador(idade)
                 .classificar(imc, idade, sexoNormalizado);
 
-        return String.format(Locale.US, "IMC: %.2f - Classificacao: %s", imc, classificacao.descricao());
+        return new ResultadoIMC(imc, classificacao.descricao());
     }
 
     private void validarEntradas(double peso, double altura, int idade, String sexo) {

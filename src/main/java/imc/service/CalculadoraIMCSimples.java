@@ -1,5 +1,7 @@
 package imc.service;
 
+import imc.model.ResultadoIMC;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.Locale;
@@ -7,7 +9,7 @@ import java.util.Locale;
 public class CalculadoraIMCSimples implements CalculadoraIMCService {
 
     @Override
-    public String calcularIMC(double peso, double altura, int idade, String sexo) {
+    public ResultadoIMC calcularIMC(double peso, double altura, int idade, String sexo) {
         validarEntradas(peso, altura, idade, sexo);
 
         String sexoNormalizado = sexo.trim().toLowerCase(Locale.ROOT);
@@ -22,7 +24,7 @@ public class CalculadoraIMCSimples implements CalculadoraIMCService {
             classificacao = classificarCrianca(imc, idade, sexoNormalizado);
         }
 
-        return String.format(Locale.US, "IMC: %.2f - Classificacao: %s", imc, classificacao);
+        return new ResultadoIMC(imc, classificacao);
     }
 
     private void validarEntradas(double peso, double altura, int idade, String sexo) {

@@ -1,5 +1,7 @@
 package imc.service;
 
+import imc.model.ResultadoIMC;
+
 public interface CalculadoraIMCService {
-    String calcularIMC(double peso, double altura, int idade, String sexo);
+    ResultadoIMC calcularIMC(double peso, double altura, int idade, String sexo);
 }
