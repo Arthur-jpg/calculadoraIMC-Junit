@@ -13,7 +13,7 @@ public class ClassificadorInfantil implements ClassificadorPorFaixaEtaria {
             4, new LimitesPercentil(14.51, 17.01, 18.81),
             6, new LimitesPercentil(14.01, 17.01, 18.31),
             8, new LimitesPercentil(14.21, 17.81, 20.01),
-            10, new LimitesPercentil(14.6, 20.5, 22.5)
+            10, new LimitesPercentil(14.51, 19.31, 22.01)
     );
 
     private static final Map<Integer, LimitesPercentil> MENINAS = Map.of(
