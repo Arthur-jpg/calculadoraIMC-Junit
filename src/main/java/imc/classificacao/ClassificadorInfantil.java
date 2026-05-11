@@ -12,7 +12,7 @@ public class ClassificadorInfantil implements ClassificadorPorFaixaEtaria {
             2, new LimitesPercentil(15.01, 18.01, 19.01),
             4, new LimitesPercentil(14.51, 17.01, 18.81),
             6, new LimitesPercentil(14.01, 17.01, 18.31),
-            8, new LimitesPercentil(14.0, 19.0, 20.3),
+            8, new LimitesPercentil(14.21, 17.81, 20.01),
             10, new LimitesPercentil(14.6, 20.5, 22.5)
     );
 
