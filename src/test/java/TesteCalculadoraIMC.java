@@ -473,211 +473,211 @@ public class TesteCalculadoraIMC {
 
     @Test
     public void menina2anos_baixo_peso_caso65() {
-        ResultadoIMC resultado = calculadora.calcularIMC(11.57, 0.90, 2, "feminino");
-        Assert.assertEquals(14.29, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(11.99, 0.90, 2, "feminino");
+        Assert.assertEquals(14.80, resultado.imc(), 0.0);
         Assert.assertEquals("Baixo peso", resultado.classificacao());
     }
 
     @Test
     public void menina2anos_peso_normal_caso66() {
-        ResultadoIMC resultado = calculadora.calcularIMC(11.58, 0.90, 2, "feminino");
-        Assert.assertEquals(14.30, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(12.00, 0.90, 2, "feminino");
+        Assert.assertEquals(14.81, resultado.imc(), 0.0);
         Assert.assertEquals("Peso normal", resultado.classificacao());
     }
 
     @Test
     public void menina2anos_peso_normal_caso67() {
-        ResultadoIMC resultado = calculadora.calcularIMC(14.57, 0.90, 2, "feminino");
-        Assert.assertEquals(17.99, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(14.58, 0.90, 2, "feminino");
+        Assert.assertEquals(18.00, resultado.imc(), 0.0);
         Assert.assertEquals("Peso normal", resultado.classificacao());
     }
 
     @Test
     public void menina2anos_sobrepeso_caso68() {
-        ResultadoIMC resultado = calculadora.calcularIMC(14.58, 0.90, 2, "feminino");
-        Assert.assertEquals(18.00, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(14.59, 0.90, 2, "feminino");
+        Assert.assertEquals(18.01, resultado.imc(), 0.0);
         Assert.assertEquals("Sobrepeso", resultado.classificacao());
     }
 
     @Test
     public void menina2anos_sobrepeso_caso69() {
-        ResultadoIMC resultado = calculadora.calcularIMC(15.38, 0.90, 2, "feminino");
-        Assert.assertEquals(18.99, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(15.39, 0.90, 2, "feminino");
+        Assert.assertEquals(19.00, resultado.imc(), 0.0);
         Assert.assertEquals("Sobrepeso", resultado.classificacao());
     }
 
     @Test
     public void menina2anos_obesidade_caso70() {
-        ResultadoIMC resultado = calculadora.calcularIMC(15.39, 0.90, 2, "feminino");
-        Assert.assertEquals(19.00, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(15.40, 0.90, 2, "feminino");
+        Assert.assertEquals(19.01, resultado.imc(), 0.0);
         Assert.assertEquals("Obesidade", resultado.classificacao());
     }
 
     @Test
     public void menina4anos_baixo_peso_caso71() {
-        ResultadoIMC resultado = calculadora.calcularIMC(13.49, 1.00, 4, "feminino");
-        Assert.assertEquals(13.49, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(14.00, 1.00, 4, "feminino");
+        Assert.assertEquals(14.00, resultado.imc(), 0.0);
         Assert.assertEquals("Baixo peso", resultado.classificacao());
     }
 
     @Test
     public void menina4anos_peso_normal_caso72() {
-        ResultadoIMC resultado = calculadora.calcularIMC(13.50, 1.00, 4, "feminino");
-        Assert.assertEquals(13.50, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(14.01, 1.00, 4, "feminino");
+        Assert.assertEquals(14.01, resultado.imc(), 0.0);
         Assert.assertEquals("Peso normal", resultado.classificacao());
     }
 
     @Test
     public void menina4anos_peso_normal_caso73() {
-        ResultadoIMC resultado = calculadora.calcularIMC(17.19, 1.00, 4, "feminino");
-        Assert.assertEquals(17.19, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(16.80, 1.00, 4, "feminino");
+        Assert.assertEquals(16.80, resultado.imc(), 0.0);
         Assert.assertEquals("Peso normal", resultado.classificacao());
     }
 
     @Test
     public void menina4anos_sobrepeso_caso74() {
-        ResultadoIMC resultado = calculadora.calcularIMC(17.20, 1.00, 4, "feminino");
-        Assert.assertEquals(17.20, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(16.81, 1.00, 4, "feminino");
+        Assert.assertEquals(16.81, resultado.imc(), 0.0);
         Assert.assertEquals("Sobrepeso", resultado.classificacao());
     }
 
     @Test
     public void menina4anos_sobrepeso_caso75() {
-        ResultadoIMC resultado = calculadora.calcularIMC(18.19, 1.00, 4, "feminino");
-        Assert.assertEquals(18.19, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(18.00, 1.00, 4, "feminino");
+        Assert.assertEquals(18.00, resultado.imc(), 0.0);
         Assert.assertEquals("Sobrepeso", resultado.classificacao());
     }
 
     @Test
     public void menina4anos_obesidade_caso76() {
-        ResultadoIMC resultado = calculadora.calcularIMC(18.20, 1.00, 4, "feminino");
-        Assert.assertEquals(18.20, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(18.01, 1.00, 4, "feminino");
+        Assert.assertEquals(18.01, resultado.imc(), 0.0);
         Assert.assertEquals("Obesidade", resultado.classificacao());
     }
 
     @Test
     public void menina6anos_baixo_peso_caso77() {
-        ResultadoIMC resultado = calculadora.calcularIMC(17.69, 1.15, 6, "feminino");
-        Assert.assertEquals(13.39, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(18.25, 1.15, 6, "feminino");
+        Assert.assertEquals(13.80, resultado.imc(), 0.0);
         Assert.assertEquals("Baixo peso", resultado.classificacao());
     }
 
     @Test
     public void menina6anos_peso_normal_caso78() {
-        ResultadoIMC resultado = calculadora.calcularIMC(17.70, 1.15, 6, "feminino");
-        Assert.assertEquals(13.40, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(18.26, 1.15, 6, "feminino");
+        Assert.assertEquals(13.81, resultado.imc(), 0.0);
         Assert.assertEquals("Peso normal", resultado.classificacao());
     }
 
     @Test
     public void menina6anos_peso_normal_caso79() {
-        ResultadoIMC resultado = calculadora.calcularIMC(23.11, 1.15, 6, "feminino");
-        Assert.assertEquals(17.49, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(22.48, 1.15, 6, "feminino");
+        Assert.assertEquals(17.00, resultado.imc(), 0.0);
         Assert.assertEquals("Peso normal", resultado.classificacao());
     }
 
     @Test
     public void menina6anos_sobrepeso_caso80() {
-        ResultadoIMC resultado = calculadora.calcularIMC(23.12, 1.15, 6, "feminino");
-        Assert.assertEquals(17.50, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(22.49, 1.15, 6, "feminino");
+        Assert.assertEquals(17.01, resultado.imc(), 0.0);
         Assert.assertEquals("Sobrepeso", resultado.classificacao());
     }
 
     @Test
     public void menina6anos_sobrepeso_caso81() {
-        ResultadoIMC resultado = calculadora.calcularIMC(24.71, 1.15, 6, "feminino");
-        Assert.assertEquals(18.69, resultado.imc(), 0.0);
-        Assert.assertEquals("Sobrepeso", resultado.classificacao());
-    }
-
-    @Test
-    public void menina6anos_obesidade_caso82() {
-        ResultadoIMC resultado = calculadora.calcularIMC(24.72, 1.15, 6, "feminino");
-        Assert.assertEquals(18.70, resultado.imc(), 0.0);
-        Assert.assertEquals("Obesidade", resultado.classificacao());
-    }
-
-    @Test
-    public void menina8anos_baixo_peso_caso83() {
-        ResultadoIMC resultado = calculadora.calcularIMC(22.59, 1.28, 8, "feminino");
-        Assert.assertEquals(13.79, resultado.imc(), 0.0);
-        Assert.assertEquals("Baixo peso", resultado.classificacao());
-    }
-
-    @Test
-    public void menina8anos_peso_normal_caso84() {
-        ResultadoIMC resultado = calculadora.calcularIMC(22.61, 1.28, 8, "feminino");
-        Assert.assertEquals(13.80, resultado.imc(), 0.0);
-        Assert.assertEquals("Peso normal", resultado.classificacao());
-    }
-
-    @Test
-    public void menina8anos_peso_normal_caso85() {
-        ResultadoIMC resultado = calculadora.calcularIMC(30.77, 1.28, 8, "feminino");
-        Assert.assertEquals(18.79, resultado.imc(), 0.0);
-        Assert.assertEquals("Peso normal", resultado.classificacao());
-    }
-
-    @Test
-    public void menina8anos_sobrepeso_caso86() {
-        ResultadoIMC resultado = calculadora.calcularIMC(30.79, 1.28, 8, "feminino");
+        ResultadoIMC resultado = calculadora.calcularIMC(24.86, 1.15, 6, "feminino");
         Assert.assertEquals(18.80, resultado.imc(), 0.0);
         Assert.assertEquals("Sobrepeso", resultado.classificacao());
     }
 
     @Test
+    public void menina6anos_obesidade_caso82() {
+        ResultadoIMC resultado = calculadora.calcularIMC(24.87, 1.15, 6, "feminino");
+        Assert.assertEquals(18.81, resultado.imc(), 0.0);
+        Assert.assertEquals("Obesidade", resultado.classificacao());
+    }
+
+    @Test
+    public void menina8anos_baixo_peso_caso83() {
+        ResultadoIMC resultado = calculadora.calcularIMC(22.94, 1.28, 8, "feminino");
+        Assert.assertEquals(14.00, resultado.imc(), 0.0);
+        Assert.assertEquals("Baixo peso", resultado.classificacao());
+    }
+
+    @Test
+    public void menina8anos_peso_normal_caso84() {
+        ResultadoIMC resultado = calculadora.calcularIMC(22.95, 1.28, 8, "feminino");
+        Assert.assertEquals(14.01, resultado.imc(), 0.0);
+        Assert.assertEquals("Peso normal", resultado.classificacao());
+    }
+
+    @Test
+    public void menina8anos_peso_normal_caso85() {
+        ResultadoIMC resultado = calculadora.calcularIMC(29.82, 1.28, 8, "feminino");
+        Assert.assertEquals(18.20, resultado.imc(), 0.0);
+        Assert.assertEquals("Peso normal", resultado.classificacao());
+    }
+
+    @Test
+    public void menina8anos_sobrepeso_caso86() {
+        ResultadoIMC resultado = calculadora.calcularIMC(29.83, 1.28, 8, "feminino");
+        Assert.assertEquals(18.21, resultado.imc(), 0.0);
+        Assert.assertEquals("Sobrepeso", resultado.classificacao());
+    }
+
+    @Test
     public void menina8anos_sobrepeso_caso87() {
-        ResultadoIMC resultado = calculadora.calcularIMC(33.57, 1.28, 8, "feminino");
-        Assert.assertEquals(20.49, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(33.59, 1.28, 8, "feminino");
+        Assert.assertEquals(20.50, resultado.imc(), 0.0);
         Assert.assertEquals("Sobrepeso", resultado.classificacao());
     }
 
     @Test
     public void menina8anos_obesidade_caso88() {
-        ResultadoIMC resultado = calculadora.calcularIMC(33.59, 1.28, 8, "feminino");
-        Assert.assertEquals(20.50, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(33.60, 1.28, 8, "feminino");
+        Assert.assertEquals(20.51, resultado.imc(), 0.0);
         Assert.assertEquals("Obesidade", resultado.classificacao());
     }
 
     @Test
     public void menina10anos_baixo_peso_caso89() {
-        ResultadoIMC resultado = calculadora.calcularIMC(28.01, 1.40, 10, "feminino");
-        Assert.assertEquals(14.29, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(28.42, 1.40, 10, "feminino");
+        Assert.assertEquals(14.50, resultado.imc(), 0.0);
         Assert.assertEquals("Baixo peso", resultado.classificacao());
     }
 
     @Test
     public void menina10anos_peso_normal_caso90() {
-        ResultadoIMC resultado = calculadora.calcularIMC(28.03, 1.40, 10, "feminino");
-        Assert.assertEquals(14.30, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(28.44, 1.40, 10, "feminino");
+        Assert.assertEquals(14.51, resultado.imc(), 0.0);
         Assert.assertEquals("Peso normal", resultado.classificacao());
     }
 
     @Test
     public void menina10anos_peso_normal_caso91() {
-        ResultadoIMC resultado = calculadora.calcularIMC(39.57, 1.40, 10, "feminino");
-        Assert.assertEquals(20.19, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(39.20, 1.40, 10, "feminino");
+        Assert.assertEquals(20.00, resultado.imc(), 0.0);
         Assert.assertEquals("Peso normal", resultado.classificacao());
     }
 
     @Test
     public void menina10anos_sobrepeso_caso92() {
-        ResultadoIMC resultado = calculadora.calcularIMC(39.59, 1.40, 10, "feminino");
-        Assert.assertEquals(20.20, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(39.22, 1.40, 10, "feminino");
+        Assert.assertEquals(20.01, resultado.imc(), 0.0);
         Assert.assertEquals("Sobrepeso", resultado.classificacao());
     }
 
     @Test
     public void menina10anos_sobrepeso_caso93() {
-        ResultadoIMC resultado = calculadora.calcularIMC(44.67, 1.40, 10, "feminino");
-        Assert.assertEquals(22.79, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(45.08, 1.40, 10, "feminino");
+        Assert.assertEquals(23.00, resultado.imc(), 0.0);
         Assert.assertEquals("Sobrepeso", resultado.classificacao());
     }
 
     @Test
     public void menina10anos_obesidade_caso94() {
-        ResultadoIMC resultado = calculadora.calcularIMC(44.69, 1.40, 10, "feminino");
-        Assert.assertEquals(22.80, resultado.imc(), 0.0);
+        ResultadoIMC resultado = calculadora.calcularIMC(45.10, 1.40, 10, "feminino");
+        Assert.assertEquals(23.01, resultado.imc(), 0.0);
         Assert.assertEquals("Obesidade", resultado.classificacao());
     }
 
