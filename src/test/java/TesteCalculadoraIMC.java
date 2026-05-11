@@ -8,7 +8,6 @@ import org.junit.Test;
 
 public class TesteCalculadoraIMC {
 
-    // Escolha manual da implementacao para os testes
     private static final String IMPLEMENTACAO = "avancada";
     // private static final String IMPLEMENTACAO = "simples";
 
